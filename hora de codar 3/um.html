@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado 
+        // for igual ou menor que ZERO, deve ser lido um novo valor. Ou seja, para o segundo valor não pode 
+        // ser aceito o valor zero, nem um valor negativo.  O seu programa deve imprimir o resultado da divisão 
+        // do primeiro valor lido pelo segundo valor.
+
+        var um = parseFloat(prompt("Digite um número:"));
+        var dois = parseFloat(prompt("Digite outro número:"));
+
+        while(dois <= 0)
+        {
+            dois = parseFloat(prompt("O segundo valor deve ser maior que zero. Digite outro valor:"));
+        }
+        var resultado = um / dois;
+        alert(`O valor da divisão é: ${resultado}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
